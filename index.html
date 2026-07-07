@@ -288,7 +288,7 @@
     <li><a href="#curso">Curso</a></li>
     <li><a href="#sobre">Sobre</a></li>
   </ul>
-  <a href="#avaliacao" class="nav-cta">Avaliação Gratuita</a>
+  <div style="display:flex;gap:12px;align-items:center;margin-left:8px;"><a href="https://www.instagram.com/oscarahumadanumerologo" target="_blank" style="color:#A89DB8;font-size:18px;text-decoration:none;" title="Instagram">📷</a><a href="https://www.facebook.com/oscarahumadanumerologo" target="_blank" style="color:#A89DB8;font-size:18px;text-decoration:none;" title="Facebook">👥</a><a href="https://wa.me/5531972159908" target="_blank" style="color:#25D366;font-size:18px;text-decoration:none;" title="WhatsApp">💬</a></div><a href="#avaliacao" class="nav-cta">Avaliação Gratuita</a>
 </nav>
 
 <!-- HERO -->
@@ -444,7 +444,7 @@
           <option>Espiritualidade</option>
         </select>
       </div>
-      <button class="btn-gold" style="width:100%;font-size:14px;padding:15px;" onclick="showToast('✦ Avaliação solicitada! Em até 48h você receberá sua análise.')">Receber minha avaliação gratuita →</button>
+      <button class="btn-gold" style="width:100%;font-size:14px;padding:15px;" onclick="window.open('https://wa.me/5531972159908?text=Olá%20Oscar!%20Gostaria%20de%20agendar%20uma%20consulta.','_blank')">Receber minha avaliação gratuita →</button>
       <p style="font-size:11px;color:var(--dim);text-align:center;margin-top:12px;">Seus dados são confidenciais e não serão compartilhados.</p>
     </div>
   </div>
@@ -654,7 +654,7 @@
             <div style="font-size:12px;color:var(--dim);margin-top:4px;">Selecione data e horário acima</div>
             <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--gold);margin-top:8px;">R$ 350,00</div>
           </div>
-          <button class="btn-gold" style="width:100%;" onclick="showToast('✦ Agendamento recebido! Oscar entrará em contato em breve.')">Confirmar agendamento →</button>
+          <button class="btn-gold" style="width:100%;" onclick="window.open('https://wa.me/5531972159908?text=Olá%20Oscar!%20Gostaria%20de%20agendar%20uma%20consulta.','_blank')">Confirmar agendamento →</button>
         </div>
       </div>
     </div>
@@ -720,7 +720,7 @@
           <li>Grupo exclusivo de alunos</li>
           <li>1 sessão de mentoria com Oscar</li>
         </ul>
-        <button class="btn-gold" style="width:100%;font-size:15px;padding:16px;" onclick="showToast('✦ Redirecionando para o pagamento seguro...')">Quero me inscrever no curso →</button>
+        <button class="btn-gold" style="width:100%;font-size:15px;padding:16px;" onclick="window.open('https://wa.me/5531972159908?text=Olá%20Oscar!%20Gostaria%20de%20agendar%20uma%20consulta.','_blank')">Quero me inscrever no curso →</button>
         <p style="font-size:11px;color:var(--dim);text-align:center;margin-top:12px;">🔒 Pagamento 100% seguro · 7 dias de garantia</p>
       </div>
     </div>
@@ -835,10 +835,10 @@
     <div>
       <div class="footer-col-title">Contato</div>
       <ul class="footer-links">
-        <li><a href="#">WhatsApp</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">E-mail</a></li>
+        <li><a href="https://wa.me/5531972159908" target="_blank">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/oscarahumadanumerologo" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/oscarahumadanumerologo" target="_blank">Facebook</a></li>
+        <li><a href="mailto:contato@oscarahumada.com.br">E-mail</a></li>
         <li><a href="#">Patio Savassi, BH</a></li>
       </ul>
     </div>
@@ -924,7 +924,7 @@
 
   function confirmarOferta() {
     document.getElementById('modal-oferta').style.display = 'none';
-    showToast('✦ Vaga garantida! Oscar entrará em contato pelo WhatsApp em breve.');
+    window.open('https://wa.me/5531972159908?text=Olá%20Oscar!%20Gostaria%20de%20agendar%20uma%20consulta.','_blank');
   }
 
   window.addEventListener('load', iniciarOferta);
@@ -978,5 +978,10 @@
     el.classList.add('sel');
   }
 </script>
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5531972159908?text=Olá%20Oscar!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" style="position:fixed;bottom:90px;right:24px;z-index:998;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);text-decoration:none;font-size:28px;transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+  💬
+</a>
 </body>
 </html>
