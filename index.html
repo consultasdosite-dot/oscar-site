@@ -22,13 +22,21 @@
   body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--cream);overflow-x:hidden;}
 
   /* ── NAVBAR ── */
-  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 48px;background:rgba(14,11,26,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.15);}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:16px 48px;background:rgba(14,11,26,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.15);}
   .nav-logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--gold);letter-spacing:.04em;}
   .nav-links{display:flex;gap:32px;list-style:none;}
   .nav-links a{color:var(--dim);font-size:13px;text-decoration:none;letter-spacing:.06em;transition:color .2s;}
   .nav-links a:hover{color:var(--gold);}
   .nav-cta{background:var(--gold);color:var(--ink);padding:9px 22px;border-radius:4px;font-size:13px;font-weight:600;text-decoration:none;letter-spacing:.04em;transition:background .2s;}
   .nav-cta:hover{background:var(--goldL);}
+  .hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;}
+  .hamburger span{display:block;width:24px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s;}
+  .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(14,11,26,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:32px;}
+  .mobile-menu.aberto{display:flex;}
+  .mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--cream);text-decoration:none;letter-spacing:.04em;transition:color .2s;}
+  .mobile-menu a:hover{color:var(--gold);}
+  .mobile-menu-close{position:absolute;top:24px;right:24px;background:none;border:none;color:var(--gold);font-size:32px;cursor:pointer;}
+  .mobile-cta{background:var(--gold);color:var(--ink);padding:14px 40px;border-radius:4px;font-size:16px;font-weight:700;text-decoration:none;letter-spacing:.04em;margin-top:16px;}
 
   /* ── HERO ── */
   .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:120px 48px 80px;}
@@ -206,6 +214,8 @@
   @media(max-width:900px){
     nav{padding:16px 24px;}
     .nav-links{display:none;}
+    .hamburger{display:flex;}
+    .nav-cta{display:none;}
     section{padding:72px 24px;}
     .hero{padding:100px 24px 60px;}
     .hero-inner,.aval-inner,.curso-inner,.sobre-inner{grid-template-columns:1fr;gap:48px;}
@@ -266,8 +276,8 @@
     <!-- Linha 2: Preço + Timer + Botão -->
     <div class="oferta-row2">
       <div class="oferta-preco-box">
-        <div class="oferta-de">De R$ 800,00</div>
-        <div class="oferta-por">R$ 395,00</div>
+        <div class="oferta-de">De R$ 395,00</div>
+        <div class="oferta-por">R$ 197,00</div>
         <div class="oferta-avista">À VISTA · APENAS HOJE</div>
       </div>
       <div class="oferta-timer">
@@ -326,7 +336,22 @@
     <li><a href="#sobre">Sobre</a></li>
   </ul>
   <div style="display:flex;gap:12px;align-items:center;margin-left:8px;"><a href="https://www.instagram.com/oscarahumadanumerologo" target="_blank" style="color:#A89DB8;font-size:18px;text-decoration:none;" title="Instagram">📷</a><a href="https://www.facebook.com/oscarahumadanumerologo" target="_blank" style="color:#A89DB8;font-size:18px;text-decoration:none;" title="Facebook">👥</a><a href="https://wa.me/5531972159908" target="_blank" style="color:#25D366;font-size:18px;text-decoration:none;" title="WhatsApp">💬</a></div><a href="#avaliacao" class="nav-cta">Avaliação Gratuita</a>
+  <button class="hamburger" id="hamburger" onclick="abrirMenu()">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu-close" onclick="fecharMenu()">✕</button>
+  <a href="#midia" onclick="fecharMenu()">Na Mídia</a>
+  <a href="#avaliacao" onclick="fecharMenu()">Avaliação Gratuita</a>
+  <a href="#mapas" onclick="fecharMenu()">Mapas</a>
+  <a href="#agendamento" onclick="fecharMenu()">Agendamento</a>
+  <a href="#curso" onclick="fecharMenu()">Curso</a>
+  <a href="#sobre" onclick="fecharMenu()">Sobre</a>
+  <a href="#avaliacao" class="mobile-cta" onclick="fecharMenu()">Avaliação Gratuita ✦</a>
+</div>
 
 <!-- HERO -->
 <section class="hero" id="inicio">
@@ -358,7 +383,7 @@
     </div>
     <div class="hero-right">
       <div class="hero-photo-wrap">
-        <img src="site1.jpg" alt="Oscar Ahumada — Numerólogo das Estrelas" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5);"/>
+        <img src="post1.jpg" alt="Oscar Ahumada — Numerólogo das Estrelas" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5);"/>
         <div class="hero-tag">
           <div class="hero-tag-num">★ 5.0</div>
           <div class="hero-tag-label">Avaliação dos clientes</div>
@@ -938,6 +963,9 @@
   window.addEventListener('load', iniciarOferta);
 
   // ── MAPAS ──
+  function abrirMenu(){ document.getElementById('mobile-menu').classList.add('aberto'); document.body.style.overflow='hidden'; }
+  function fecharMenu(){ document.getElementById('mobile-menu').classList.remove('aberto'); document.body.style.overflow=''; }
+
   const mapas = {
     pessoal: {nome:"Mapa Pessoal", price:"R$ 297", desc:"Análise completa do seu nome e data de nascimento."},
     empresarial: {nome:"Mapa Empresarial", price:"R$ 397", desc:"Nome da empresa, CNPJ e data de fundação analisados."},
