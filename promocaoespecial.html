@@ -3,302 +3,290 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Promoção Especial do Dia — Oscar Ahumada</title>
-<meta name="description" content="Promoção especial de numerologia com Oscar Ahumada. Oferta válida somente hoje!"/>
+<title>Promoção Especial — Oscar Ahumada</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'Inter',sans-serif;background:#07050F;color:#D4CCE8;overflow-x:hidden;}
+body{font-family:'Inter',sans-serif;background:#07050F;color:#D4CCE8;overflow-x:hidden;min-height:100vh;}
 
-/* ── TOPO ── */
-.topo{background:rgba(7,5,15,0.97);padding:0 32px;height:60px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(201,151,58,0.15);position:sticky;top:0;z-index:100;backdrop-filter:blur(20px);}
-.logo{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#C9973A;text-decoration:none;}
-.voltar{color:#7A708E;font-size:13px;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .2s;}
-.voltar:hover{color:#C9973A;}
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(7,5,15,0.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,151,58,0.12);padding:0 32px;height:58px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Playfair Display',serif;font-size:19px;font-weight:600;color:#C9973A;text-decoration:none;}
+.nav-back{font-size:13px;color:#7A708E;text-decoration:none;transition:color .2s;}
+.nav-back:hover{color:#C9973A;}
 
-/* ── HERO ── */
-.hero{position:relative;min-height:420px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
-.hero-left{padding:60px 48px;background:linear-gradient(135deg,#0F0C1E,#07050F);display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2;}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(201,151,58,0.35);border-radius:20px;padding:6px 16px;font-size:11px;font-weight:600;color:#C9973A;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:400;color:#F5F0E8;line-height:1.2;margin-bottom:16px;}
-.hero-title em{font-style:italic;color:#C9973A;}
-.hero-sub{font-size:15px;color:#7A708E;line-height:1.7;margin-bottom:28px;max-width:400px;}
-.hero-right{position:relative;overflow:hidden;}
+/* HERO */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:480px;}
+.hero-l{padding:64px 56px;background:linear-gradient(135deg,#0F0C1E 0%,#07050F 100%);display:flex;flex-direction:column;justify-content:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(201,151,58,0.3);border-radius:20px;padding:6px 16px;font-size:11px;font-weight:600;color:#C9973A;letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px;width:fit-content;}
+.hero-h{font-family:'Playfair Display',serif;font-size:clamp(34px,4vw,54px);font-weight:400;color:#F5F0E8;line-height:1.2;margin-bottom:18px;}
+.hero-h em{font-style:italic;color:#C9973A;}
+.hero-p{font-size:15px;color:#7A708E;line-height:1.75;margin-bottom:32px;max-width:380px;}
+.hero-globo{display:inline-flex;align-items:center;gap:10px;background:rgba(201,151,58,0.08);border:1px solid rgba(201,151,58,0.2);border-radius:10px;padding:10px 16px;}
+.hero-globo-l{font-size:10px;color:#7A708E;font-weight:600;letter-spacing:.08em;text-transform:uppercase;}
+.hero-globo-v{font-size:13px;color:#F5F0E8;font-weight:500;margin-top:2px;}
+.hero-r{position:relative;overflow:hidden;}
 .hero-img{width:100%;height:100%;object-fit:cover;object-position:center top;}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,#07050F 0%,transparent 40%),linear-gradient(to top,#07050F 0%,transparent 50%);}
+.hero-fade{position:absolute;inset:0;background:linear-gradient(to right,#07050F 0%,transparent 35%),linear-gradient(to top,#07050F 0%,transparent 45%);}
 
-/* ── URGÊNCIA ── */
-.urgencia{background:linear-gradient(135deg,#1A0000,#3D0000);border-bottom:1px solid rgba(201,151,58,0.2);padding:14px 32px;text-align:center;}
-.urg-inner{max-width:700px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;}
-.urg-badge{background:#000;border:1px solid rgba(201,151,58,0.4);border-radius:6px;padding:6px 14px;}
-.urg-badge-t{font-size:12px;font-weight:800;letter-spacing:.1em;color:#fff;text-transform:uppercase;}
-.urg-badge-s{font-size:10px;color:#999;margin-top:1px;}
-.urg-text{font-family:'Playfair Display',serif;font-size:18px;color:#F5F0E8;}
-.urg-text em{font-style:italic;color:#C9973A;}
-.cnt-wrap{display:flex;align-items:center;gap:6px;}
-.cnt-box{background:#000;border:1px solid #C9973A;border-radius:8px;padding:6px 12px;min-width:50px;text-align:center;}
-.cnt-num{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#C9973A;line-height:1;}
-.cnt-unit{font-size:9px;color:#fff;font-weight:700;margin-top:2px;letter-spacing:.04em;}
-.cnt-sep{color:#C9973A;font-size:22px;font-weight:700;margin-bottom:12px;}
+/* CONTADOR */
+.cnt-bar{background:linear-gradient(135deg,#0F0020,#1A0030);border-top:1px solid rgba(201,151,58,0.15);border-bottom:1px solid rgba(201,151,58,0.15);padding:18px 32px;}
+.cnt-inner{max-width:700px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;}
+.cnt-label{font-size:13px;color:#7A708E;font-weight:500;}
+.cnt-label strong{color:#C9973A;}
+.cnt-boxes{display:flex;align-items:center;gap:8px;}
+.cnt-box{background:#0A0820;border:1px solid rgba(201,151,58,0.4);border-radius:10px;padding:8px 14px;min-width:56px;text-align:center;}
+.cnt-n{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#C9973A;line-height:1;}
+.cnt-u{font-size:9px;color:#7A708E;font-weight:600;margin-top:3px;letter-spacing:.06em;text-transform:uppercase;}
+.cnt-sep{color:#C9973A;font-size:24px;font-weight:700;margin-bottom:14px;}
 
-/* ── MAIN ── */
-.main{max-width:760px;margin:0 auto;padding:52px 24px 80px;}
+/* CONTEÚDO */
+.content{max-width:720px;margin:0 auto;padding:56px 24px 80px;}
 
-/* ── CARD OFERTA ── */
-.oferta-card{background:linear-gradient(135deg,#161228,#0F0C1E);border:1.5px solid rgba(201,151,58,0.35);border-radius:24px;padding:40px 36px;text-align:center;margin-bottom:32px;position:relative;overflow:hidden;}
-.oferta-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#C9973A,#F0D070,#C9973A);}
-.oferta-card-title{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:#F5F0E8;margin-bottom:8px;}
-.oferta-card-sub{font-size:14px;color:#7A708E;margin-bottom:32px;line-height:1.6;}
+/* TÍTULO SEÇÃO */
+.section-label{font-size:11px;font-weight:700;letter-spacing:.18em;color:#C9973A;text-transform:uppercase;text-align:center;margin-bottom:10px;}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,38px);font-weight:400;color:#F5F0E8;text-align:center;line-height:1.3;margin-bottom:8px;}
+.section-title em{font-style:italic;color:#C9973A;}
+.section-sub{font-size:14px;color:#7A708E;text-align:center;line-height:1.7;max-width:480px;margin:0 auto 40px;}
 
-/* ── O QUE INCLUI ── */
-.inclui-titulo{font-size:11px;font-weight:700;letter-spacing:.15em;color:#C9973A;text-transform:uppercase;margin-bottom:20px;}
-.inclui-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px;text-align:left;}
-.inclui-item{display:flex;align-items:flex-start;gap:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;}
-.inclui-icon{color:#C9973A;font-size:18px;flex-shrink:0;margin-top:1px;}
-.inclui-nome{font-size:13px;font-weight:600;color:#F5F0E8;line-height:1.4;}
-.inclui-desc{font-size:11px;color:#7A708E;margin-top:3px;line-height:1.4;}
+/* NÚMEROS — LISTA ELEGANTE */
+.numeros{display:flex;flex-direction:column;gap:1px;margin-bottom:32px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.06);}
+.numero-item{background:#161228;padding:24px 28px;display:flex;gap:20px;align-items:flex-start;transition:background .2s;}
+.numero-item:hover{background:#1C1535;}
+.numero-item+.numero-item{border-top:1px solid rgba(255,255,255,0.05);}
+.numero-orb{width:44px;height:44px;border-radius:12px;background:rgba(201,151,58,0.1);border:1px solid rgba(201,151,58,0.2);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.numero-body{flex:1;}
+.numero-nome{font-size:15px;font-weight:600;color:#F5F0E8;margin-bottom:5px;}
+.numero-desc{font-size:13px;color:#7A708E;line-height:1.65;}
 
-/* ── BRINDE ── */
-.brinde{background:linear-gradient(135deg,rgba(201,151,58,0.12),rgba(201,151,58,0.04));border:1px solid rgba(201,151,58,0.3);border-radius:14px;padding:20px 24px;margin-bottom:28px;display:flex;align-items:center;gap:16px;text-align:left;}
-.brinde-icon{font-size:32px;flex-shrink:0;}
-.brinde-title{font-size:14px;font-weight:700;color:#C9973A;margin-bottom:4px;}
-.brinde-desc{font-size:13px;color:#7A708E;line-height:1.5;}
+/* BRINDE */
+.brinde{background:linear-gradient(135deg,rgba(201,151,58,0.1),rgba(201,151,58,0.03));border:1px solid rgba(201,151,58,0.25);border-radius:16px;padding:24px 28px;margin-bottom:24px;display:flex;gap:18px;align-items:flex-start;}
+.brinde-icon{font-size:32px;flex-shrink:0;margin-top:2px;}
+.brinde-t{font-size:15px;font-weight:700;color:#C9973A;margin-bottom:6px;}
+.brinde-d{font-size:13px;color:#7A708E;line-height:1.65;}
+.brinde-d strong{color:#F5F0E8;}
 
-/* ── ENTREGA ── */
-.entrega{display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.2);border-radius:10px;padding:12px 20px;margin-bottom:28px;}
-.entrega-icon{font-size:20px;}
-.entrega-text{font-size:13px;font-weight:600;color:#25D366;}
+/* ENTREGA */
+.entrega{background:rgba(37,211,102,0.06);border:1px solid rgba(37,211,102,0.18);border-radius:12px;padding:14px 20px;margin-bottom:36px;display:flex;align-items:center;justify-content:center;gap:10px;}
+.entrega-t{font-size:13px;font-weight:600;color:#25D366;}
 
-/* ── PREÇO ── */
-.preco-wrap{margin-bottom:28px;}
-.preco-de{font-size:15px;color:#4A4268;text-decoration:line-through;margin-bottom:4px;}
-.preco-por{font-family:'Playfair Display',serif;font-size:68px;font-weight:700;color:#C9973A;line-height:1;}
-.preco-parcel{font-size:14px;color:#7A708E;margin-top:6px;}
-.preco-validade{display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.25);border-radius:20px;padding:6px 16px;font-size:12px;font-weight:700;color:#EF4444;margin-top:12px;}
+/* PREÇO */
+.preco-card{background:linear-gradient(135deg,#161228,#0F0C1E);border:1.5px solid rgba(201,151,58,0.3);border-radius:20px;padding:36px 32px;text-align:center;margin-bottom:24px;position:relative;overflow:hidden;}
+.preco-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#C9973A,#F0D070,#C9973A,transparent);}
+.preco-de{font-size:15px;color:#4A4268;text-decoration:line-through;margin-bottom:6px;}
+.preco-por{font-family:'Playfair Display',serif;font-size:72px;font-weight:700;color:#C9973A;line-height:1;margin-bottom:8px;}
+.preco-parcel{font-size:14px;color:#7A708E;margin-bottom:16px;}
+.preco-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.25);border-radius:20px;padding:7px 18px;font-size:12px;font-weight:700;color:#EF4444;}
 
-/* ── BOTÃO ── */
-.btn-wa{display:block;width:100%;background:#25D366;color:#fff;border:none;border-radius:14px;padding:20px;font-size:17px;font-weight:800;cursor:pointer;text-decoration:none;letter-spacing:.02em;box-shadow:0 8px 28px rgba(37,211,102,0.35);transition:transform .2s,box-shadow .2s;margin-bottom:12px;}
+/* BOTÕES */
+.btn-wa{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:#25D366;color:#fff;border:none;border-radius:14px;padding:20px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;letter-spacing:.02em;box-shadow:0 8px 28px rgba(37,211,102,0.3);transition:all .2s;margin-bottom:12px;}
 .btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(37,211,102,0.45);}
-.btn-secondary{display:block;width:100%;background:transparent;color:#C9973A;border:1px solid rgba(201,151,58,0.3);border-radius:14px;padding:14px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;text-align:center;transition:all .2s;}
-.btn-secondary:hover{background:rgba(201,151,58,0.08);}
+.btn-back{display:flex;align-items:center;justify-content:center;width:100%;background:transparent;color:#7A708E;border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:14px;font-size:14px;font-weight:500;cursor:pointer;text-decoration:none;transition:all .2s;}
+.btn-back:hover{color:#C9973A;border-color:rgba(201,151,58,0.2);}
 
-/* ── DEPOIMENTOS ── */
-.deps{margin-top:48px;}
-.deps-title{font-family:'Playfair Display',serif;font-size:24px;color:#F5F0E8;text-align:center;margin-bottom:24px;}
-.dep{background:#161228;border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:24px;margin-bottom:14px;}
-.dep-text{font-family:'Playfair Display',serif;font-size:16px;font-style:italic;color:#F5F0E8;line-height:1.7;margin-bottom:16px;}
-.dep-author{display:flex;align-items:center;gap:12px;}
-.dep-av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#C9973A,#7C3AED);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#07050F;}
-.dep-name{font-size:13px;font-weight:600;color:#F5F0E8;}
-.dep-city{font-size:11px;color:#7A708E;}
-.dep-stars{color:#C9973A;font-size:11px;margin-top:2px;}
+/* DEPOIMENTOS */
+.deps{margin-top:52px;}
+.deps-t{font-family:'Playfair Display',serif;font-size:26px;color:#F5F0E8;text-align:center;margin-bottom:24px;}
+.dep{background:#161228;border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:24px 28px;margin-bottom:12px;}
+.dep-q{font-size:36px;font-family:'Playfair Display',serif;color:#C9973A;opacity:.2;line-height:1;margin-bottom:8px;}
+.dep-t{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:#F5F0E8;line-height:1.75;margin-bottom:16px;}
+.dep-a{display:flex;align-items:center;gap:12px;}
+.dep-av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#C9973A,#7C3AED);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#07050F;flex-shrink:0;}
+.dep-n{font-size:13px;font-weight:600;color:#F5F0E8;}
+.dep-c{font-size:11px;color:#7A708E;margin-top:1px;}
+.dep-s{color:#C9973A;font-size:11px;margin-top:2px;}
 
-/* ── GARANTIA ── */
-.garantia{text-align:center;padding:28px;border-top:1px solid rgba(255,255,255,0.06);margin-top:32px;}
-.garantia-icon{font-size:36px;margin-bottom:10px;}
-.garantia-text{font-size:13px;color:#7A708E;line-height:1.7;}
+/* GARANTIA */
+.garantia{text-align:center;padding:32px 24px;border-top:1px solid rgba(255,255,255,0.06);margin-top:40px;}
+.garantia-i{font-size:40px;margin-bottom:12px;}
+.garantia-t{font-size:13px;color:#7A708E;line-height:1.8;}
+.garantia-t strong{color:#F5F0E8;}
 
-/* ── WA FLOAT ── */
+/* WA FLOAT */
 .wa-float{position:fixed;bottom:24px;right:24px;z-index:200;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 20px rgba(37,211,102,0.5);text-decoration:none;transition:transform .2s;}
 .wa-float:hover{transform:scale(1.1);}
 
-/* ── RESPONSIVE ── */
-@media(max-width:760px){
+/* RESPONSIVE */
+@media(max-width:720px){
   .hero{grid-template-columns:1fr;}
-  .hero-right{height:280px;}
-  .hero-left{padding:40px 24px;}
-  .oferta-card{padding:28px 20px;}
-  .inclui-grid{grid-template-columns:1fr;}
-  .preco-por{font-size:52px;}
-  .urg-inner{gap:12px;}
-  .urg-text{font-size:15px;}
+  .hero-r{height:260px;order:-1;}
+  .hero-l{padding:40px 24px;}
+  .preco-por{font-size:56px;}
+  .cnt-inner{gap:16px;}
+  .numero-item{padding:20px 20px;}
 }
 </style>
 </head>
 <body>
 
-<!-- TOPO -->
-<div class="topo">
-  <a href="/" class="logo">Oscar Ahumada</a>
-  <a href="/" class="voltar">← Voltar ao site</a>
+<!-- NAV -->
+<div class="nav">
+  <a href="/" class="nav-logo">Oscar Ahumada</a>
+  <a href="/" class="nav-back">← Voltar ao site</a>
 </div>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-left">
-    <div class="hero-eyebrow">✦ Promoção Especial do Dia</div>
-    <h1 class="hero-title">Descubra o que os<br/>números revelam<br/>sobre <em>você</em></h1>
-    <p class="hero-sub">Uma análise numerológica completa com Oscar Ahumada — o Numerólogo das Estrelas da Rede Globo. Oferta válida apenas hoje.</p>
-    <a href="#oferta" class="btn-wa" style="display:inline-block;width:auto;padding:14px 28px;font-size:14px;">Ver oferta do dia →</a>
-  </div>
-  <div class="hero-right">
-    <img src="post1.png" alt="Oscar Ahumada" class="hero-img"/>
-    <div class="hero-overlay"></div>
-  </div>
-</div>
-
-<!-- URGÊNCIA / CONTADOR -->
-<div class="urgencia">
-  <div class="urg-inner">
-    <div class="urg-badge">
-      <div class="urg-badge-t">⚡ Oferta Relâmpago</div>
-      <div class="urg-badge-s">Apenas hoje · 1 vaga</div>
-    </div>
-    <div class="urg-text">Esta oferta expira em <em>meia-noite</em></div>
-    <div class="cnt-wrap">
-      <div class="cnt-box"><div class="cnt-num" id="h">00</div><div class="cnt-unit">HRS</div></div>
-      <div class="cnt-sep">:</div>
-      <div class="cnt-box"><div class="cnt-num" id="m">00</div><div class="cnt-unit">MIN</div></div>
-      <div class="cnt-sep">:</div>
-      <div class="cnt-box"><div class="cnt-num" id="s">00</div><div class="cnt-unit">SEG</div></div>
-    </div>
-  </div>
-</div>
-
-<!-- MAIN -->
-<div class="main" id="oferta">
-
-  <!-- CARD DA OFERTA -->
-  <div class="oferta-card">
-
-    <div class="oferta-card-title">Mapa Numerológico Completo</div>
-    <div class="oferta-card-sub">Análise profunda de todos os seus números principais — uma visão completa da sua essência, missão e potencial.</div>
-
-    <!-- O QUE INCLUI -->
-    <div class="inclui-titulo">✦ O que está incluso nesta oferta</div>
-    <div class="inclui-grid">
-
-      <div class="inclui-item">
-        <span class="inclui-icon">✦</span>
-        <div>
-          <div class="inclui-nome">Número do Nome Social</div>
-          <div class="inclui-desc">Como você se apresenta ao mundo e como os outros percebem você.</div>
-        </div>
-      </div>
-
-      <div class="inclui-item">
-        <span class="inclui-icon">◈</span>
-        <div>
-          <div class="inclui-nome">Número do Nome Completo</div>
-          <div class="inclui-desc">A expressão máxima da sua personalidade e talentos naturais.</div>
-        </div>
-      </div>
-
-      <div class="inclui-item">
-        <span class="inclui-icon">⬡</span>
-        <div>
-          <div class="inclui-nome">Número do Nome Profissional</div>
-          <div class="inclui-desc">Seu potencial de carreira e a vibração do seu nome no trabalho.</div>
-        </div>
-      </div>
-
-      <div class="inclui-item">
-        <span class="inclui-icon">⟡</span>
-        <div>
-          <div class="inclui-nome">Número do Destino</div>
-          <div class="inclui-desc">Sua missão de vida e o caminho que os números traçaram para você.</div>
-        </div>
-      </div>
-
-      <div class="inclui-item" style="grid-column:1/-1;">
-        <span class="inclui-icon">◎</span>
-        <div>
-          <div class="inclui-nome">Número do Pináculo</div>
-          <div class="inclui-desc">Os grandes ciclos da sua vida — o que cada fase reserva para o seu crescimento e realização.</div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- BRINDE -->
-    <div class="brinde">
-      <div class="brinde-icon">🎁</div>
+  <div class="hero-l">
+    <div class="hero-badge">✦ Promoção Especial do Dia</div>
+    <h1 class="hero-h">Descubra o que<br/>os números revelam<br/>sobre <em>você</em></h1>
+    <p class="hero-p">Uma análise numerológica completa com Oscar Ahumada — o Numerólogo das Estrelas da Rede Globo. Oferta válida apenas hoje.</p>
+    <div class="hero-globo">
+      <span style="font-size:20px;">📺</span>
       <div>
-        <div class="brinde-title">Brinde exclusivo desta promoção</div>
-        <div class="brinde-desc">Previsões numerológicas para <strong style="color:#F5F0E8;">2026 e 2027</strong> — descubra o que os próximos dois anos reservam para você em amor, finanças, saúde e espiritualidade.</div>
+        <div class="hero-globo-l">Visto na televisão</div>
+        <div class="hero-globo-v">Mais Você · Encontro · Rede Globo</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-r">
+    <img src="post1.png" alt="Oscar Ahumada — Numerólogo das Estrelas" class="hero-img"/>
+    <div class="hero-fade"></div>
+  </div>
+</div>
+
+<!-- CONTADOR -->
+<div class="cnt-bar">
+  <div class="cnt-inner">
+    <div class="cnt-label">⏱ <strong>Esta oferta expira em meia-noite</strong></div>
+    <div class="cnt-boxes">
+      <div class="cnt-box"><div class="cnt-n" id="h">00</div><div class="cnt-u">Hrs</div></div>
+      <div class="cnt-sep">:</div>
+      <div class="cnt-box"><div class="cnt-n" id="m">00</div><div class="cnt-u">Min</div></div>
+      <div class="cnt-sep">:</div>
+      <div class="cnt-box"><div class="cnt-n" id="s">00</div><div class="cnt-u">Seg</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="content">
+
+  <!-- TÍTULO -->
+  <div class="section-label">O que você recebe</div>
+  <h2 class="section-title">Mapa Numerológico <em>Completo</em></h2>
+  <p class="section-sub">Uma visão profunda e precisa da sua essência, missão de vida e potencial — através dos 5 números mais importantes da numerologia.</p>
+
+  <!-- OS 5 NÚMEROS -->
+  <div class="numeros">
+
+    <div class="numero-item">
+      <div class="numero-orb">✦</div>
+      <div class="numero-body">
+        <div class="numero-nome">Número do Nome Social</div>
+        <div class="numero-desc">Revela como você se apresenta ao mundo e como as pessoas ao seu redor percebem sua energia e personalidade no dia a dia.</div>
       </div>
     </div>
 
-    <!-- ENTREGA -->
-    <div class="entrega">
-      <span class="entrega-icon">📧</span>
-      <span class="entrega-text">Entrega completa por e-mail em até 48 horas</span>
+    <div class="numero-item">
+      <div class="numero-orb">◈</div>
+      <div class="numero-body">
+        <div class="numero-nome">Número do Nome Completo</div>
+        <div class="numero-desc">A expressão mais completa da sua essência — talentos naturais, potenciais latentes e a vibração total do seu ser nesta vida.</div>
+      </div>
     </div>
 
-    <!-- PREÇO -->
-    <div class="preco-wrap">
-      <div class="preco-de">De R$ 395,00</div>
-
-      <!-- ════════════════════════════════
-           EDITE AQUI: preço da promoção
-           ════════════════════════════════ -->
-      <div class="preco-por">R$ 197,00</div>
-      <div class="preco-parcel">ou 3x de R$ 66,00 sem juros</div>
-      <div class="preco-validade">🔴 Válido somente hoje!</div>
+    <div class="numero-item">
+      <div class="numero-orb">⬡</div>
+      <div class="numero-body">
+        <div class="numero-nome">Número do Nome Profissional</div>
+        <div class="numero-desc">O impacto da sua assinatura e nome no ambiente de trabalho. Descubra se sua vibração profissional atrai prosperidade e reconhecimento.</div>
+      </div>
     </div>
 
-    <!-- BOTÕES -->
-    <a href="https://wa.me/5531972159908?text=Olá%20Oscar!%20Vi%20a%20promoção%20especial%20do%20dia%20e%20quero%20o%20Mapa%20Numerológico%20Completo%20por%20R$%20197,00!" target="_blank" class="btn-wa">
-      💬 Quero aproveitar esta promoção →
-    </a>
-    <a href="/" class="btn-secondary">Ver todos os serviços</a>
+    <div class="numero-item">
+      <div class="numero-orb">⟡</div>
+      <div class="numero-body">
+        <div class="numero-nome">Número do Destino</div>
+        <div class="numero-desc">Sua missão de vida, o propósito que sua alma escolheu para esta encarnação e o caminho que os números traçaram especialmente para você.</div>
+      </div>
+    </div>
+
+    <div class="numero-item">
+      <div class="numero-orb">◎</div>
+      <div class="numero-body">
+        <div class="numero-nome">Número do Pináculo</div>
+        <div class="numero-desc">Os grandes ciclos da sua vida — cada fase tem uma vibração única. Saiba em qual pináculo você está agora e o que ele significa para seu crescimento.</div>
+      </div>
+    </div>
 
   </div>
+
+  <!-- BRINDE -->
+  <div class="brinde">
+    <div class="brinde-icon">🎁</div>
+    <div>
+      <div class="brinde-t">Brinde exclusivo desta promoção</div>
+      <div class="brinde-d">Previsões numerológicas detalhadas para <strong>2026 e 2027</strong> — amor, finanças, saúde e espiritualidade. Descubra antecipadamente o que os próximos dois anos reservam para a sua vida.</div>
+    </div>
+  </div>
+
+  <!-- ENTREGA -->
+  <div class="entrega">
+    <span style="font-size:18px;">📧</span>
+    <span class="entrega-t">Entrega completa por e-mail em até 48 horas</span>
+  </div>
+
+  <!-- PREÇO -->
+  <div class="preco-card">
+    <div class="preco-de">De R$ 395,00</div>
+    <!-- EDITE O PREÇO AQUI -->
+    <div class="preco-por">R$ 197,00</div>
+    <div class="preco-parcel">ou 3x de R$ 66,00 sem juros</div>
+    <div class="preco-tag">🔴 Válido somente hoje!</div>
+  </div>
+
+  <!-- BOTÕES -->
+  <a href="https://wa.me/5531972159908?text=Olá%20Oscar!%20Vi%20a%20promoção%20especial%20do%20dia%20e%20quero%20o%20Mapa%20Numerológico%20Completo%20por%20R$%20197,00!" target="_blank" class="btn-wa">
+    💬 Quero aproveitar esta promoção
+  </a>
+  <a href="/" class="btn-back">← Ver todos os serviços</a>
 
   <!-- DEPOIMENTOS -->
   <div class="deps">
-    <div class="deps-title">O que dizem os clientes</div>
+    <div class="deps-t">O que dizem os clientes</div>
 
     <div class="dep">
-      <div class="dep-text">"Oscar me ajudou a entender por que meu negócio não decolava. Mudei o nome da empresa seguindo a orientação numerológica e em 6 meses triplicamos o faturamento."</div>
-      <div class="dep-author">
+      <div class="dep-q">"</div>
+      <div class="dep-t">Oscar me ajudou a entender por que meu negócio não decolava. Mudei o nome da empresa seguindo a orientação numerológica e em 6 meses triplicamos o faturamento.</div>
+      <div class="dep-a">
         <div class="dep-av">M</div>
-        <div>
-          <div class="dep-name">Marcela Oliveira</div>
-          <div class="dep-city">Empresária · São Paulo</div>
-          <div class="dep-stars">★★★★★</div>
-        </div>
+        <div><div class="dep-n">Marcela Oliveira</div><div class="dep-c">Empresária · São Paulo</div><div class="dep-s">★★★★★</div></div>
       </div>
     </div>
 
     <div class="dep">
-      <div class="dep-text">"A profundidade da análise e a precisão das informações me deixaram sem palavras. Oscar revelou coisas sobre mim que nem eu sabia."</div>
-      <div class="dep-author">
+      <div class="dep-q">"</div>
+      <div class="dep-t">A profundidade da análise e a precisão das informações me deixaram sem palavras. Oscar revelou coisas sobre mim que nem eu sabia consciously.</div>
+      <div class="dep-a">
         <div class="dep-av">R</div>
-        <div>
-          <div class="dep-name">Roberto Dias</div>
-          <div class="dep-city">Médico · Rio de Janeiro</div>
-          <div class="dep-stars">★★★★★</div>
-        </div>
+        <div><div class="dep-n">Roberto Dias</div><div class="dep-c">Médico · Rio de Janeiro</div><div class="dep-s">★★★★★</div></div>
       </div>
     </div>
 
     <div class="dep">
-      <div class="dep-text">"As previsões para o ano foram incríveis. Tudo que Oscar disse se confirmou. Indico para todo mundo!"</div>
-      <div class="dep-author">
+      <div class="dep-q">"</div>
+      <div class="dep-t">As previsões para o ano foram incríveis. Tudo que Oscar disse se confirmou. Já indiquei para toda a minha família!</div>
+      <div class="dep-a">
         <div class="dep-av">A</div>
-        <div>
-          <div class="dep-name">Ana Paula Ferreira</div>
-          <div class="dep-city">Psicóloga · Belo Horizonte</div>
-          <div class="dep-stars">★★★★★</div>
-        </div>
+        <div><div class="dep-n">Ana Paula Ferreira</div><div class="dep-c">Psicóloga · Belo Horizonte</div><div class="dep-s">★★★★★</div></div>
       </div>
     </div>
   </div>
 
   <!-- BOTÃO FINAL -->
   <a href="https://wa.me/5531972159908?text=Olá%20Oscar!%20Vi%20a%20promoção%20especial%20do%20dia%20e%20quero%20o%20Mapa%20Numerológico%20Completo%20por%20R$%20197,00!" target="_blank" class="btn-wa" style="margin-top:32px;">
-    💬 Garantir minha promoção agora →
+    💬 Garantir minha promoção agora
   </a>
 
   <!-- GARANTIA -->
   <div class="garantia">
-    <div class="garantia-icon">🔒</div>
-    <div class="garantia-text">
+    <div class="garantia-i">🔒</div>
+    <div class="garantia-t">
       Seus dados são protegidos e confidenciais.<br/>
-      Oscar entrará em contato pelo WhatsApp para confirmar seu pedido.<br/>
-      <strong style="color:#F5F0E8;">Satisfação garantida ou seu dinheiro de volta.</strong>
+      Oscar entrará em contato pelo WhatsApp para confirmar.<br/>
+      <strong>Satisfação garantida ou seu dinheiro de volta.</strong>
     </div>
   </div>
 
@@ -308,21 +296,15 @@ body{font-family:'Inter',sans-serif;background:#07050F;color:#D4CCE8;overflow-x:
 <a class="wa-float" href="https://wa.me/5531972159908" target="_blank">💬</a>
 
 <script>
-  // Contador até meia-noite
-  function tick(){
-    const agora = new Date();
-    const meia = new Date();
-    meia.setHours(23,59,59,0);
-    let d = Math.max(0, Math.floor((meia-agora)/1000));
-    const hh = Math.floor(d/3600);
-    const mm = Math.floor((d%3600)/60);
-    const ss = d%60;
-    document.getElementById('h').textContent = String(hh).padStart(2,'0');
-    document.getElementById('m').textContent = String(mm).padStart(2,'0');
-    document.getElementById('s').textContent = String(ss).padStart(2,'0');
-  }
-  tick();
-  setInterval(tick,1000);
+function tick(){
+  const n=new Date(), m=new Date();
+  m.setHours(23,59,59,0);
+  let d=Math.max(0,Math.floor((m-n)/1000));
+  document.getElementById('h').textContent=String(Math.floor(d/3600)).padStart(2,'0');
+  document.getElementById('m').textContent=String(Math.floor((d%3600)/60)).padStart(2,'0');
+  document.getElementById('s').textContent=String(d%60).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
 </script>
 </body>
 </html>
